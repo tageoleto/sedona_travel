@@ -1,0 +1,62 @@
+﻿@import "variables.less";
+
+.response {    padding: 40px 25px 50px;
+    text-align: center;
+    
+
+    @media(min-width: @tablet-width) {
+        
+    }
+
+    @media(min-width: @desktop-width) {
+       
+    }
+}
+
+.response__title--big {
+    font-size: 21px;
+
+    @media(min-width: @tablet-width) {
+        margin-top: 10px;
+    }}
+
+    .response__description {
+        @media(min-width: @tablet-width) {
+            width: 435px;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 50px;
+        }
+    }
+
+    .response__wrapper {
+    }
+
+.button {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: white;
+    background-color: @blue;
+    border: none;
+    padding: 15px 32px;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+
+    &:focus {
+        background: rgba(102, 158, 192, 1);
+        color: rgba(255, 255, 255, 0.3);
+    }
+
+        &:hover {
+            background: #669EC0;
+        }
+    @media(min-width: @tablet-width) {
+        padding: 15px 121px;
+
+    }
+}

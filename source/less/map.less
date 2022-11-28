@@ -1,0 +1,24 @@
+﻿@import "variables.less";
+
+.map{
+    position: relative;
+}
+
+.map-point {
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    z-index: 6;
+    top: 45%;
+    left: 45%;
+
+    @media(min-width: @tablet-width) {
+        top: 45%;
+        left: 48%;
+    }
+
+    @media(min-width: @desktop-width) {
+        top: 45%;
+        left: 49%;
+    }
+}

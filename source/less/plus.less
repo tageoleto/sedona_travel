@@ -1,0 +1,118 @@
+﻿@import "variables.less";
+
+.plus__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    @media (min-width: @tablet-width) {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+.plus__item {
+    width: 240px;
+    padding-left: 70px;
+    padding-bottom: 26px;
+
+    @media(min-width:@tablet-width) {
+        padding-top: 160px;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 60px;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    @media(min-width: @desktop-width) {
+        padding-left: 70px;
+        padding-right: 80px;
+    }
+}
+.plus__title {
+    text-align: left;
+
+    @media(min-width:@tablet-width) {
+        text-align: center;
+    }
+
+}
+
+.plus__description {
+    text-align: left;
+    margin: 0;
+
+    @media(min-width:@tablet-width) {
+        text-align: center;
+    }
+}
+
+    .plus__item:first-child {
+        padding-top: 35px;
+
+        @media(min-width:@tablet-width) {
+            padding-top: 160px;
+            
+        }
+    }
+
+.plus__item--housing::before {
+    content: "";
+    background: url("../images/house-icon.SVG") no-repeat 0 0;
+    width: 36px;
+    height: 39px;
+    position: absolute;
+    transform: translate(-45px, -11px);
+
+    @media(min-width:@tablet-width) {
+        width: 75px;
+        height: 72px;
+        transform: translate(89px, -70px) scale(1.9);
+    }
+
+    @media(min-width: @desktop-width) {
+        transform: translate(115px, -70px) scale(1.9);
+    }
+    }
+    .plus__wrapper--left {
+        position: relative;
+    }
+
+.plus__item--souvenirs::before {
+    content: "";
+    background: url("../images/gift-icon.SVG") no-repeat 0 0;
+    width: 32px;
+    height: 38px;
+    position: absolute;
+    transform: translate(-43px, -11px);
+
+    @media(min-width:@tablet-width) {
+        width: 75px;
+        height: 72px;
+        transform: translate(94px, -70px) scale(1.9);
+    }
+
+    @media(min-width: @desktop-width) {
+        transform: translate(123px, -70px) scale(1.9);
+    }
+}
+
+.plus__item--food::before {
+    content: "";
+    background: url("../images/burger-icon.SVG") no-repeat 0 0;
+    width: 40px;
+    height: 35px;
+    position: absolute;
+    transform: translate(-49px, -11px);
+
+    @media(min-width:@tablet-width) {
+        width: 75px;
+        height: 72px;
+        transform: translate(89px, -70px) scale(1.9);
+    }
+
+    @media(min-width: @desktop-width) {
+        transform: translate(115px, -64px) scale(1.9);
+    }
+}

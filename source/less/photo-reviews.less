@@ -1,0 +1,216 @@
+﻿@import "variables.less";
+
+.title-reviews {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-top: 11px;
+}
+
+
+.subtitle-reviews {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+    margin-bottom: 14px;
+}
+.reviews__item {
+    position: relative;
+    padding-bottom: 15px;
+    padding-top: 20px;
+
+    @media(min-width: @tablet-width) {
+        padding: 0;
+        }
+    }
+
+    @media(min-width: @tablet-width) {
+        .reviews__item:nth-child(2n) {
+            margin-left: 50px;
+        }
+       
+
+    }
+
+    @media(min-width: @desktop-width){
+        .reviews__item:nth-child(2n){
+            margin: 0;
+        }
+        }
+
+
+    .reviews__wrapper {
+        padding: 20px 10px;
+    }
+
+    .reviews__image {
+        width: 25px;
+        height: 24px;
+    }
+
+.reviews__list {
+    padding: 0 20px;
+    margin: 0;
+
+    @media(min-width: @tablet-width) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 60px;
+    }
+
+    @media (min-width: @desktop-width) {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+    .reviews__wrapper {
+        @media(min-width: @tablet-width) {
+            height: 200px;
+        }
+    }
+
+    .reviews__item--main {
+        @media(min-width: @tablet-width) {
+            margin-left: 50px;
+        }
+        @media(min-width: @desktop-width){
+            margin: 0;
+        }
+    }
+
+    .reviews__wrapper{
+    padding: 20px 10px;
+}
+
+    
+    .video-poster {
+        width: 320px;
+        height: 200px;
+
+
+        @media (min-width: @tablet-width) {
+            width: 648px;
+            height: 500px;
+            margin: 0 auto;
+            display: block;
+        }
+
+        @media (min-width: @desktop-width) {
+            width: 800px;
+            height: 500px;
+            margin: 0 auto;
+            display: block;
+        }
+    }
+
+.photo-reviews__wrapper{
+  
+}
+.video__text {
+    margin: 0 27px;
+}
+
+    .likes__number {
+        margin: 0;
+        margin-left: 40px;
+
+        @media(min-width: @tablet-width) {
+            padding-top: 30px;
+            width: 52px;
+        }
+    }
+
+.likes__number::before {
+    @media(max-width: @mobile-width) {
+        content: "";
+        position: absolute;
+        width: 23px;
+        height: 21px;
+        background: url("../images/like.SVG") no-repeat 0 0;
+        left: 0;
+        fill: black;
+    }
+
+    @media(min-width: @tablet-width) {
+        content: "";
+        position: absolute;
+        width: 23px;
+        height: 21px;
+        background: url("../images/like.SVG") no-repeat 0 0;
+        right: 61px;
+    }
+
+    @media(min-width: @desktop-width) {
+        background: url("../images/like-white.SVG") no-repeat 0 0;
+    }
+}
+
+
+@media(min-width: @tablet-width) {
+    br {
+        display: none;
+    }
+}
+
+    .reviews__about {
+        @media(min-width: @tablet-width) {
+            width: 460px;
+            margin: 0 auto;
+        }
+    }
+
+
+.photo-design {
+    @media(min-width: @tablet-width) {
+        display: flex;
+        justify-content: space-between;
+        background: @formgrey;
+    }
+
+    @media(min-width: @desktop-width) {
+        margin-top: -72px;
+        position: relative;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.2);
+        
+        color: @white;
+    }
+}
+
+    .reviews-text {
+        padding-left: 20px;
+    }
+.photo-3 + .photo-design {
+    @media(min-width: @tablet-width) {
+        background: darken(@formgrey, 5%);
+    }
+
+    @media(min-width: @desktop-width) {
+        background: rgba(0, 0, 0, 0.2);
+        color: @white;
+    }
+}
+
+.video .reviews-subtitle {
+    font-size: 14px;
+    display: block;
+   
+
+    @media(min-width: @tablet-width) {
+        display: block;
+        margin: 0 auto;
+        width: 445px;}
+
+        @media(min-width: @desktop-width) {
+            margin-bottom: 60px;
+        }
+    }
+    

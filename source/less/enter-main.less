@@ -1,0 +1,70 @@
+﻿@import "variables.less";
+.page-container {
+    background: @blue url("../images/back-desktop.jpg.JPG") no-repeat 50% 50%;
+    height: 389px;
+    
+    display: block;
+
+
+   @media(min-resolution: 2dppx) {
+        background-image: url("../images/back-desktop@2x.JPG");
+        background-size:640px 389px;
+        background-position: 50% 50%;
+    }
+}
+
+@media(min-width: @tablet-width) {
+    .page-container {
+        background-color: @blue;
+        height: 520px;
+        display: block;
+    }
+    @media(min-resolution: 2dppx) {
+        .page-container{
+        background-image: url("../images/back-desktop@2x.JPG");
+        background-size: 1536px 520px;
+
+    }  }
+}
+@media(min-width: @desktop-width){
+    .page-container {
+        height: 518px;
+        display: block;
+        background-image: url("../images/back-desktop.jpg.JPG");
+
+        @media(min-resolution: 2dppx) {
+            background-image: url("../images/back-desktop@2x.JPG");
+           
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+
+
+.enter-logo {
+    position: absolute;
+    transform: translate(40%, 30%);
+    right: 40%;
+
+
+    @media (min-width: @tablet-width) {
+        width: 461px;
+        height: 350px;
+        transform: translate(50%, 30%);
+        right: 50%;
+    }
+}
+.page-main__enter{
+    position: relative;
+}
+
+.triangle-border--top {
+    position: absolute;
+    bottom: -1px;
+    height: 57px;
+    background: url("../images/intro-triangle.SVG") no-repeat 50% 0;
+    fill: @white;
+    width: 100%;
+}
+

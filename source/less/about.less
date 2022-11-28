@@ -1,0 +1,43 @@
+﻿@import "variables.less";
+
+.about {
+
+
+@media (min-width: @tablet-width){
+   
+}}
+.about__wrapper {
+    width: 285px;
+    margin: 0 auto;
+    margin-top: 30px;
+
+
+    @media(min-width: @tablet-width) {
+        margin-top: 50px;
+        width: 520px;
+        margin-bottom: 50px;
+    }
+}
+.about__wrapper::before {
+    @media(max-width:320px) {
+        content: "";
+        background: url("../images/triangle.SVG") no-repeat 0 0;
+        width: 161px;
+        height: 37px;
+        position: absolute;
+        left: 0;
+        bottom: -51px;
+    }
+}
+.about__wrapper::after {
+    @media(max-width:320px) {
+        content: "";
+        background: url("../images/triangle-right.SVG") no-repeat 0 0;
+        width: 161px;
+        height: 37px;
+        position: absolute;
+        right: 0;
+        bottom: -51px;
+
+       }
+    }

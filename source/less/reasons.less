@@ -1,0 +1,130 @@
+﻿@import (reference) "variables.less";
+
+.reasons {
+background-color: @blue ;
+}
+
+.reasons__headline--contrast {
+    color: @white;
+
+    @media(min-width: @tablet-width) {
+        width: 185px;
+        display: block;
+       margin: 0 auto;
+    }
+}
+.reasons__description--contrast {
+    color: @white;
+    
+
+   
+}
+.reasons__number--contrast {
+    color: @white;
+}
+.reasons__list--additional {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background: @lightgrey;
+
+    @media(min-width: @tablet-width) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+.reasons__item--additional {
+   
+    padding-bottom: 25px;
+    
+    @media(min-width: @tablet-width){
+        margin: 40px auto;
+        
+    }
+}
+
+
+
+.reasons__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.reasons__image{
+        display: block;
+        
+}
+.reasons-text__wrapper {
+    padding-top:  40px;
+    width: 285px;
+    margin: 0 auto;
+
+
+    @media(min-width: @tablet-width) {
+        
+        max-width: 256px;
+    }
+
+    @media(min-width: @desktop-width) {
+        
+        max-width: 400px;
+    }
+}
+
+.reasons__item--contrast {
+    
+
+    @media (min-width: @tablet-width) {
+        display: flex;
+    }
+}
+
+.reasons__text--second{
+    order: 1;
+}
+.reasons__image--second{
+    order: 2;
+}
+.reasons__number {
+    display: block;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.reasons__item{
+    padding-top: 20px;
+
+    @media(min-width: @tablet-width){
+        padding: 0;
+    }
+}
+
+.reasons__description {
+    margin: 0 auto;
+    width: 270px;
+    text-align: center;
+    display: block;
+
+    @media(min-width: @tablet-width) {
+        width: 185px;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.border-bottom {
+    position: absolute; 
+    left: 20px;
+    width: 280px;
+    height:10px; 
+    border-bottom: 2px solid @greyborder;
+    
+    @media(min-width: @tablet-width){
+        display: none;
+    }
+}
+/* <div style="position: absolute; left: 20px; width: 300px; height:20px; border-bottom: 1px solid grey; text-align: center">
+<span style="font-size: 40px; background-color: white; padding: 0 20px;" >
+Section Title
+</span >
+</div > для линий по центру и снизу*/ 
